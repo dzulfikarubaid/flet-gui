@@ -97,8 +97,8 @@ def main(page: ft.Page):
         # stop_all_cameras(None)
         stop_flags[1].set()
         global measurement_result
-        result = measure("images/tes2/baby_up.jpeg", "images/tes2/baby_side.jpeg")
-        # result = measure("pengukuran1.jpg", "pengukuran2.jpg")
+        # result = measure("images/tes2/baby_up.jpeg", "images/tes2/baby_side.jpeg")
+        result = measure("pengukuran1.jpg", "pengukuran2.jpg")
         print(result)
         measurement_result = result
         if(result):
@@ -123,7 +123,7 @@ def main(page: ft.Page):
 
     def start_video(vc_index, img_control):
         is_cuda = len(sys.argv) > 1 and sys.argv[1] == "cuda"
-        net = build_model(is_cuda, "/Users/macbook/Code/flett/model/best.onnx")
+        net = build_model(is_cuda, "model/best.onnx")
         vc = cv2.VideoCapture(vc_index)
 
         if not vc.isOpened():
@@ -306,11 +306,10 @@ def main(page: ft.Page):
                             ft.Text("Antropometri Bayi Digital", weight=ft.FontWeight.BOLD),
                            ft.Text("Antropometri Bayi Digital", weight=ft.FontWeight.W_100, size=12),
                            ]),
-                           ft.Image(src="images/baby.png"),
                            ft.Card(
                                content=ft.Container(
                                    ft.Image(
-                                        src=f"/Users/macbook/Code/flett/images/baby.png",
+                                        src=f"images/baby.png",
                                         width=100,
                                         height=100,
                                     ),
