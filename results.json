@@ -1,0 +1,37 @@
+{
+    "results": [
+        {
+            "data": {
+                "head": 20,
+                "chest": 12,
+                "abdomen": 31,
+                "hand": 21,
+                "leg": 112,
+                "height": 1.8
+            },
+            "date": "18 September 2024, 17:00"
+        },
+        {
+            "data": {
+                "head": 20,
+                "chest": 12,
+                "abdomen": 31,
+                "hand": 21,
+                "leg": 11,
+                "height": 30
+            },
+            "date": "18 September 2024, 17:52"
+        },
+        {
+            "data": {
+                "head": 20,
+                "chest": 12,
+                "abdomen": 31,
+                "hand": 21,
+                "leg": 11,
+                "height": 30
+            },
+            "date": "18 September 2024, 17:53"
+        }
+    ]
+}
